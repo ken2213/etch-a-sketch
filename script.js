@@ -2,7 +2,7 @@ const container = document.getElementById("container");
 const customizeButton = document.getElementById("customize-button");
 
 
-
+/*
 customizeButton.addEventListener('click', () => {
   let gridSize = prompt("Enter how wide you wanna color");
   // error prompt conditionals
@@ -16,7 +16,7 @@ customizeButton.addEventListener('click', () => {
     }
   }
 })
-
+*/
 
 
 
