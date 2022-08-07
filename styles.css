@@ -5,6 +5,55 @@
 }
 
 
+body {
+  background-image: url('https://nextshark.com/wp-content/uploads/2018/01/007.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+
+#etch-tablet {
+  background-color: hsla(0, 0%, 0%, 50%);
+  width: 900px;
+  margin: 20px auto;
+  border: 5px solid hsla(0, 1%, 54%, 50%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid-container {
+  display: grid;
+  width: 450px;
+  height: 450px;
+  border: 5px solid #ddd;
+  margin: 20px auto;
+}
+
+
+
+#button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#button-settings {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+/*
 :root {
   --grid-columns: 1;
   --grid-rows: 1;
@@ -31,7 +80,7 @@
 .my-color-class {
   background-color: blue;
 }
-
+*/ 
 
 
 
