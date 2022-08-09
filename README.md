@@ -15,11 +15,14 @@ moves the stylus horizontally, and the right one moves it vertically.
 ```
 
 ## Features
-- Random Color
-- Gray Color
-- Eraser
+- Optimized User Interface
+- Classic Black Etching Button
+- Rainbow Color Button
+- Gray Color Button
+- Eraser Button
 - Clear Button
-- Resize Etch A Sketch Canvas Pixels
+- Resize Canvas Pixels Button
+
 
 ## View it here:
 [ETCH A SKETCH](https://ken2213.github.io/etch-a-sketch/)
