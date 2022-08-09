@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/a40eeb584d.js" crossorigin="anonymous"></script>
   <title>Etch A Sketch</title> 
 </head>
 <body>
@@ -14,27 +15,47 @@
 
     <h1 id="etch-title">ETCH A SKETCH</h1>
 
-    <!-- Etch A Sketch Grid Container  -->
-    <div id="grid-container"></div>
+    <div id="main">
+      <!-- Eraser and Resize Container -->
+      <div id="button-settings">
 
-  
-    <!-- Buttons Container -->
-    <div id="button-container">
-        
-      <div id="button-colors"> 
-        <button class="color-choice"  data-color="black" id="button-black">Black</button>
-        <button class="color-choice" data-color="rainbow" id="button-rainbow">Rainbow</button>
-        <button class="color-choice" data-color="gray" id="button-gray">Gray</button>
+        <button class="color-choice btn icon-buttons" id="button-erase" data-color="eraser">
+          <i class="fa-solid fa-eraser" data-color="eraser"></i>
+        </button>
+
+        <button class="color-choice btn icon-buttons" data-color="black" id="button-resize">
+          <i class="fa-solid fa-ruler-combined"></i>
+        </button>
+
       </div>
 
-      <div id="button-settings">
-        <button class="color-choice" data-color="clear" id="button-clear">Clear</button>
-        <button class="color-choice" data-color="eraser" id="button-erase">Eraser</button>
-        <button class="color-choice" data-color="black" id="button-resize">Resize</button>
+      <!-- Etch A Sketch Grid Container  -->
+      <div id="grid-container"></div>
+
+      <!-- Clear Container-->
+      <div id="clear">
+        <button class="color-choice btn icon-buttons" data-color="clear" id="button-clear">
+          <i class="fa-solid fa-trash"></i>
+        </button>
       </div>
     </div>
 
+    <!-- Buttons Colors -->
+      <div id="button-colors"> 
+        <button class="color-choice btn"  data-color="black" id="button-black">Black</button>
+        <button class="color-choice btn" data-color="rainbow" id="button-rainbow">Rainbow</button>
+        <button class="color-choice btn" data-color="gray" id="button-gray">Gray</button>
+      </div>
+
+
   </div>
+
+  <footer id="footer">
+    <a href="https://github.com/ken2213" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <h3>Made with <i class="fa-solid fa-heart"></i> by Kenneth Ornieta</h3>
+  </footer>
 
 </body>
 </html>
