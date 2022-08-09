@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,11 +17,23 @@ body {
   background-size: cover;
 }
 
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  padding: 3px 10px;
+  cursor: pointer;
+  box-shadow: 0 9px black;
+}
+
 
 #etch-tablet {
   background-color: hsla(0, 0%, 0%, 50%);
   width: 900px;
-  margin: 20px auto;
+  margin: 10px auto 60px auto;
+  padding: 15px 0;
   border: 5px solid hsla(0, 1%, 54%, 50%);
   border-radius: 10px;
   display: flex;
@@ -26,29 +42,207 @@ body {
   align-items: center;
 }
 
+#etch-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+
+#main {
+  width: 800px;
+  display: flex;
+
+}
+
+#button-settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+#button-erase:hover {
+  color: white;
+  background-color: hsl(195, 53%, 20%);
+  box-shadow: 0 10px hsl(195, 53%, 10%);
+}
+
+#button-erase:active {
+  color: white;
+  background-color: hsl(195, 53%, 20%);
+  box-shadow: 0 5px hsl(195, 53%, 10%);
+  transform: translateY(4px);
+}
+
+
+#button-resize:hover {
+  color: white;
+  background-color: hsl(41, 98%, 48%);
+  box-shadow: 0 10px hsl(41, 98%, 10%);
+}
+
+#button-resize:active {
+  color: white;
+  background-color: hsl(41, 98%, 48%);
+  box-shadow: 0 5px hsl(41, 98%, 10%);
+  transform: translateY(4px)
+}
+
+#clear {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#button-clear:hover {
+  color: white;
+  background-color: hsl(0, 100%, 50%);
+  box-shadow: 0 10px hsl(0, 100%, 10%);
+}
+
+#button-clear:active {
+  color: white;
+  background-color: hsl(0, 100%, 50%);
+  box-shadow: 0 5px hsl(0, 100%, 10%);
+  transform: translateY(4px);
+}
+
 #grid-container {
   display: grid;
   width: 450px;
   height: 450px;
   border: 5px solid #ddd;
   margin: 20px auto;
+  cursor: crosshair;
+}
+
+
+.icon-buttons {
+  color: white;
+  background-color: hsla(0, 0%, 0%, 50%);
+  font-size: 50px;
+  border: 5px solid hsla(0, 0%, 0%, 50%);
+  border-radius: 50%;
+  padding: 10px 25px;
+}
+
+.icon-buttons:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+
+#button-colors {
+  display: flex;
+  column-gap: 30px;
+}
+
+#button-black {
+  color: white;
+  background-color: black;
+}
+
+#button-black:active {
+  color: white;
+  background-color: black;
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+
+#button-rainbow {
+  color: white;
+  background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 800% 800%;
+  animation: rainbow 15s ease infinite; 
+}
+
+#button-rainbow:active {
+  color: white;
+  background-color: black;
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+
+#button-gray {
+  color: white;
+  background-image: repeating-linear-gradient(to left, rgb(163, 161, 161), rgb(94, 90, 90), gray);
+  background-size: 800% 800%;
+  animation: gray 15s ease infinite;
+}
+
+#button-gray:active {
+  color: white;
+  background-color: black;
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+
+@keyframes rainbow { 
+  0%{
+    background-position: 0% 50%
+  }
+  50%{
+    background-position: 100% 25%
+  }
+  100%{
+    background-position:0% 50%
+  }
+}
+
+
+@keyframes gray { 
+  0%{
+    background-position: 0% 50%
+  }
+  50%{
+    background-position: 100% 25%
+  }
+  100%{
+    background-position:0% 50%
+  }
 }
 
 
 
-#button-container {
+#footer {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #ddd;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  column-gap: 20px;
 }
 
-#button-settings {
+footer > a {
+  color: black;
+}
+
+footer > a:hover {
+  background-image: repeating-linear-gradient(to left, #4078c0, #6cc644, #bd2c00, #c9510c, #6e5494);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 30s ease infinite; 
+}
+
+
+.fa-github {
+  font-size: 50px;
+}
+
+footer > h3 {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
 }
 
-
-
+.fa-heart {
+  font-size: 30px;
+  color: red;
+}
 
 /*
 :root {
